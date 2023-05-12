@@ -6,6 +6,7 @@ set(CMAKE_CXX_STANDARD 17)
 include_directories(Utils)
 
 add_executable(LearnSTL Vector/1_VectorInit.cpp Utils/Utils.h Utils/Utils.cpp)
+add_executable(test test.cpp)
 add_executable(2_VectorAssignment Vector/2_VectorAssignment.cpp Utils/Utils.h Utils/Utils.cpp)
 add_executable(3_VectorSize Vector/3_VectorSize.cpp Utils/Utils.h Utils/Utils.cpp)
 add_executable(4_VectorVisit Vector/4_VectorVisit.cpp Utils/Utils.h Utils/Utils.cpp)
