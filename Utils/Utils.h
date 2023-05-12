@@ -6,9 +6,11 @@
 
 #include "iostream"
 #include "vector"
+#include "deque"
 
 using namespace std;
 
 void PrintVector(vector<int> &vec);
+void PrintDeque(deque<int> &deq);
 
 #endif //LEARNSTL_UTILS_H

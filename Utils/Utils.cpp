@@ -14,3 +14,15 @@ void PrintVector(vector<int> &vec) {
     }
     cout << endl;
 }
+
+
+void PrintDeque(deque<int> &deq) {
+    if (deq.empty()) {
+        cout << "这个容器为空" << endl;
+        return;
+    }
+    for (auto i: deq) {
+        cout << i << "\t";
+    }
+    cout << endl;
+}
