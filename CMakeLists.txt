@@ -12,4 +12,7 @@ add_executable(3_VectorSize Vector/3_VectorSize.cpp Utils/Utils.h Utils/Utils.cp
 add_executable(4_VectorVisit Vector/4_VectorVisit.cpp Utils/Utils.h Utils/Utils.cpp)
 add_executable(5_VectorOperation Vector/5_VectorOperation.cpp Utils/Utils.h Utils/Utils.cpp)
 add_executable(6_VectorIterator Vector/6_VectorIterator.cpp Utils/Utils.h Utils/Utils.cpp)
-add_executable(1_Deque Deque/1_DequeInit.cpp Utils/Utils.h Utils/Utils.cpp)
+add_executable(1_Deque Deque/1_Deque.cpp Utils/Utils.h Utils/Utils.cpp)
+add_executable(1_ListInit List/1_ListInit.cpp Utils/Utils.h Utils/Utils.cpp)
+add_executable(2_ListIterator List/2_ListIterator.cpp Utils/Utils.h Utils/Utils.cpp)
+add_executable(2_ListAssignment List/3_ListAssignment.cpp Utils/Utils.h Utils/Utils.cpp)

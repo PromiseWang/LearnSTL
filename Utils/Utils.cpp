@@ -12,7 +12,7 @@ void PrintVector(vector<int> &vec) {
     for (auto i: vec) {
         cout << i << "\t";
     }
-    cout << endl;
+    cout << endl << endl;
 }
 
 
@@ -24,5 +24,16 @@ void PrintDeque(deque<int> &deq) {
     for (auto i: deq) {
         cout << i << "\t";
     }
-    cout << endl;
+    cout << endl << endl;
+}
+
+void PrintList(list<int> &list) {
+    if (list.empty()) {
+        cout << "这个容器为空" << endl;
+        return;
+    }
+    for (auto i: list) {
+        cout << i << "\t";
+    }
+    cout << endl << endl;
 }
