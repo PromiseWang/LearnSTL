@@ -1,13 +1,13 @@
 #include "Utils.h"
-// 用法基本等同于vector  只不过可以从双端进行操作
+// 鐢ㄦ硶鍩烘湰绛夊悓浜巚ector  鍙笉杩囧彲浠ヤ粠鍙岀杩涜鎿嶄綔
 int main() {
     deque<int> deque1 = {1, 2, 3, 4, 5, 6};
     deque1.push_front(0);
-    cout << "deque1元素内容如下:" << endl;
+    cout << "deque1鍏冪礌鍐呭濡備笅:" << endl;
     PrintDeque(deque1);
 
     deque1.pop_front();
-    cout << "deque1元素内容如下:" << endl;
+    cout << "deque1鍏冪礌鍐呭濡備笅:" << endl;
     PrintDeque(deque1);
 
     return 0;

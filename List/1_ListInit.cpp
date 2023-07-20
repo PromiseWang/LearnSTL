@@ -1,10 +1,10 @@
 #include "Utils.h"
 
 int main() {
-    // ³õÊ¼»¯
+    // åˆå§‹åŒ–
     list<int> list1 = {1, 2, 3, 4, 5};
     list<int>::iterator iterator;
-    cout << "list1ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list1ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list1);
 
     list<int> list2;
@@ -12,32 +12,32 @@ int main() {
     list2.push_back(20);
     list2.push_front(3);
     list2.push_front(34);
-    cout << "list2ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list2ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list2);
 
 
-    // É¾³ıÔªËØ
+    // åˆ é™¤å…ƒç´ 
     list1.pop_back();
     list1.pop_front();
-    cout << "list1ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list1ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list1);
 
-    cout << "list1ÖĞµÚÒ»¸ö½áµãµÄÖµ: " << list1.front() << endl << endl;
-    cout << "list1ÖĞ×îºóÒ»¸ö½áµãµÄÖµ: " << list1.back() << endl << endl;
+    cout << "list1ä¸­ç¬¬ä¸€ä¸ªç»“ç‚¹çš„å€¼: " << list1.front() << endl << endl;
+    cout << "list1ä¸­æœ€åä¸€ä¸ªç»“ç‚¹çš„å€¼: " << list1.back() << endl << endl;
 
-    list1.front() = 1111;  // ¸ü¸ÄµÚÒ»¸öÔªËØµÄÖµ
-    list1.back() = 2222;  // ¸ü¸Ä×îºóÒ»¸öÔªËØµÄÖµ
-    cout << "list1ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    list1.front() = 1111;  // æ›´æ”¹ç¬¬ä¸€ä¸ªå…ƒç´ çš„å€¼
+    list1.back() = 2222;  // æ›´æ”¹æœ€åä¸€ä¸ªå…ƒç´ çš„å€¼
+    cout << "list1ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list1);
 
-    // ³õÊ¼»¯3¸ö5
+    // åˆå§‹åŒ–3ä¸ª5
     list<int> list3(3, 5);
-    cout << "list3ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list3ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list3);
 
-    // ¿½±´Ä³¸öÈİÆ÷µÄÄ³Ò»¶ÎÊı¾İ
+    // æ‹·è´æŸä¸ªå®¹å™¨çš„æŸä¸€æ®µæ•°æ®
     list<int> list4(list1.begin(), list1.end());
-    cout << "list4ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list4ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list4);
 
     list<int>::iterator left, right;
@@ -47,12 +47,12 @@ int main() {
     right--;
 
     list<int> list5(left, right);
-    cout << "list5ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list5ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list5);
 
-    // ¿½±´¹¹Ôìº¯Êı
+    // æ‹·è´æ„é€ å‡½æ•°
     list<int> list6(list5);
-    cout << "list6ÖĞµÄÔªËØÈçÏÂ:" << endl;
+    cout << "list6ä¸­çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintList(list6);
     return 0;
 }

@@ -4,49 +4,49 @@ int main() {
 
     vector<int> vector1 = {1, 2, 3, 4, 5, 6, 7};
 
-    // 1. push_back(elem)²åÈëÄ©Î²
+    // 1. push_back(elem)æ’å…¥æœ«å°¾
     vector1.push_back(666);
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
-    // 2. pop_back() É¾³ıÄ©Î²
+    // 2. pop_back() åˆ é™¤æœ«å°¾
     vector1.pop_back();
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
-    // 3. insert(*pos, elem) posÖ¸ÕëÎ»ÖÃ²åÈëÔªËØ   insert()º¯ÊıµÄ·µ»ØÖµ½«»á·Åµ½µÚ6²¿·Ö
-    // 3ºó²åÈë99
+    // 3. insert(*pos, elem) posæŒ‡é’ˆä½ç½®æ’å…¥å…ƒç´    insert()å‡½æ•°çš„è¿”å›å€¼å°†ä¼šæ”¾åˆ°ç¬¬6éƒ¨åˆ†
+    // 3åæ’å…¥99
     vector1.insert(vector1.begin() + 3, 99);
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
-    // 4. insert(*pos, n, elem) posÖ¸ÕëÎ»ÖÃ²åÈën¸öÔªËØ
-    // 1ºó²åÈë3¸ö88
+    // 4. insert(*pos, n, elem) posæŒ‡é’ˆä½ç½®æ’å…¥nä¸ªå…ƒç´ 
+    // 1åæ’å…¥3ä¸ª88
     vector1.insert(vector1.begin() + 1, 3, 88);
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
 
     // 5. insert(*pos, *begin, *end)
     vector<int> vector2 = {-1, -2, -3};
-    // 3¸ö88 ºó²åÈëvector2
+    // 3ä¸ª88 åæ’å…¥vector2
     vector1.insert(vector1.begin() + 4, vector2.begin(), vector2.end());
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
-    // vector2ºó²åÈë3¸ö88
+    // vector2åæ’å…¥3ä¸ª88
     vector2.insert(vector2.begin() + 3, vector1.begin() + 1, vector1.begin() + 4);
-    cout << "vector2ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    cout << "vector2å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector2);
 
 
     // 6. erase()
-    vector1.erase(vector1.begin() + 9);  // É¾³ı99
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    vector1.erase(vector1.begin() + 9);  // åˆ é™¤99
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
-    vector1.erase(vector1.begin() + 1, vector1.begin() + 4);  // É¾³ıÈı¸ö88
-    cout << "vector1ÔªËØÄÚÈİÈçÏÂ:" << endl;
+    vector1.erase(vector1.begin() + 1, vector1.begin() + 4);  // åˆ é™¤ä¸‰ä¸ª88
+    cout << "vector1å…ƒç´ å†…å®¹å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
 

@@ -6,31 +6,31 @@ int main() {
     vector<int> vector1, vector2, vector3, vector4, vector5;
     int a[] = {1, 2, 3, 4, 5, 6, 7};
 
-    // 1.assign(ÆğÊ¼µØÖ·Ö¸Õë, ½áÊøµØÖ·ºóÒ»Î»µØÖ·) ¿½±´¸³Öµ
+    // 1.assign(èµ·å§‹åœ°å€æŒ‡é’ˆ, ç»“æŸåœ°å€åä¸€ä½åœ°å€) æ‹·è´èµ‹å€¼
     vector1.assign(a, a + sizeof(a) / sizeof(int));
-    cout << "vector1µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector1çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
     vector5.assign(vector1.begin(), vector1.end());
-    cout << "vector5µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector5çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector5);
 
-    // 2. assign(ÔªËØ¸öÊı, ÔªËØÖµ) ¿½±´¸³Öµ
+    // 2. assign(å…ƒç´ ä¸ªæ•°, å…ƒç´ å€¼) æ‹·è´èµ‹å€¼
     vector2.assign(5, 11);
-    cout << "vector2µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector2çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector2);
 
-    // 3. ÖØÔØµÈÓÚºÅ¸³Öµ
+    // 3. é‡è½½ç­‰äºå·èµ‹å€¼
     vector3 = vector2;
-    cout << "vector3µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector3çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector3);
 
-    // 4. swap() ½»»»ÈİÆ÷ÄÚµÄÖµ
+    // 4. swap() äº¤æ¢å®¹å™¨å†…çš„å€¼
     vector4 = vector3;
-    cout << "vector4µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector4çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
     vector1.swap( vector4);
-    cout << "vector1µÄÔªËØÈçÏÂ:" << endl;
+    cout << "vector1çš„å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector1);
 
 

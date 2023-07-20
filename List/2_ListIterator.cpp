@@ -4,16 +4,16 @@ int main() {
     list<int> list1 = {1, 2, 3, 4, 5, 6, 7, 8, 9};
     list<int>::iterator iterator1;
 
-    // Ë³Ğò±éÀú
-    cout << "list1ÄÚÈİÔªËØÈçÏÂ:" << endl;
+    // é¡ºåºéå†
+    cout << "list1å†…å®¹å…ƒç´ å¦‚ä¸‹:" << endl;
     for (iterator1 = list1.begin(); iterator1 != list1.end(); iterator1++) {
         cout << *iterator1 << "\t";
     }
     cout << endl;
 
-    // ÄæĞò±éÀú
+    // é€†åºéå†
     list<int>::reverse_iterator iterator2;
-    cout << "list2ÄÚÈİÔªËØÄæĞòÈçÏÂ:" << endl;
+    cout << "list2å†…å®¹å…ƒç´ é€†åºå¦‚ä¸‹:" << endl;
     for (iterator2 = list1.rbegin(); iterator2 != list1.rend(); iterator2++) {
         cout << *iterator2 << "\t";
     }

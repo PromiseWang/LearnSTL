@@ -4,59 +4,59 @@ int main() {
     vector<int> vector1 = {1, 2, 3, 4, 5};
 
     /*
-     * iteratorÓëbegin(), end()µÄÊ¹ÓÃ
+     * iteratorä¸begin(), end()çš„ä½¿ç”¨
      * */
     vector<int>::iterator iterator1;
     iterator1 = vector1.begin();
 
-    // Ê¹ÓÃwhileÑ­»·±éÀú
-    cout << "whileÑ­»·µÄ½á¹û:" << endl;
+    // ä½¿ç”¨whileå¾ªç¯éå†
+    cout << "whileå¾ªç¯çš„ç»“æœ:" << endl;
     while (iterator1 != vector1.end()) {
         cout << *iterator1 << "\t";
         iterator1++;
     }
     cout << endl;
 
-    // Ê¹ÓÃforÑ­»·±éÀú
-    cout << "forÑ­»·µÄ½á¹û:" << endl;
+    // ä½¿ç”¨forå¾ªç¯éå†
+    cout << "forå¾ªç¯çš„ç»“æœ:" << endl;
     for (iterator1 = vector1.begin(); iterator1 != vector1.end(); iterator1++) {
         cout << *iterator1 << "\t";
     }
     cout << endl;
 
     /*
-     * reverse_iteratorÓërbegin(), rend()µÄÊ¹ÓÃ
+     * reverse_iteratorä¸rbegin(), rend()çš„ä½¿ç”¨
      * */
     vector<int>::reverse_iterator iterator2;
-    cout << "·´Ïòµü´úÆ÷½á¹û:" << endl;
-    for (iterator2 = vector1.rbegin(); iterator2 != vector1.rend(); iterator2++) {  // ÕâÀïÒÀ¾ÉÊÇ++
+    cout << "åå‘è¿­ä»£å™¨ç»“æœ:" << endl;
+    for (iterator2 = vector1.rbegin(); iterator2 != vector1.rend(); iterator2++) {  // è¿™é‡Œä¾æ—§æ˜¯++
         cout << *iterator2 << "\t";
     }
     cout << endl;
 
     /*
-     * const_iteratorÓëcbegin(), cend()µÄÊ¹ÓÃ
-     * const_reverse_iteratorÓëcrbegin, crend()Í¬Àí
+     * const_iteratorä¸cbegin(), cend()çš„ä½¿ç”¨
+     * const_reverse_iteratorä¸crbegin, crend()åŒç†
      * */
     vector<int>::const_iterator iterator3;
     iterator3 = vector1.cbegin();
     iterator1 = vector1.begin();
-    *iterator1 += 100;  // ¿ÉÒÔÍ¨¹ıÕâÖÖ·½Ê½¸ü¸ÄÖµ
-    // *iterator3 += 100;  ²»¿ÉÒÔÊ¹ÓÃ  ÒòÎªÊÇ³£Á¿
+    *iterator1 += 100;  // å¯ä»¥é€šè¿‡è¿™ç§æ–¹å¼æ›´æ”¹å€¼
+    // *iterator3 += 100;  ä¸å¯ä»¥ä½¿ç”¨  å› ä¸ºæ˜¯å¸¸é‡
 
     /*
-     * µü´úÆ÷Ê§Ğ§µÄÇé¿ö
+     * è¿­ä»£å™¨å¤±æ•ˆçš„æƒ…å†µ
      * */
     vector<int> vector2 = {10, 20, 30, 40, 50};
     vector<int>::iterator iterator4;
     iterator4 = vector2.begin() + 2;
-    cout << "vector1ÖĞË÷ÒıÎª2µÄÔªËØÎª: " << *iterator4 << endl;
-    vector2.insert(iterator4, 2, 88);  // vector1²åÈëÁ½¸ö88
+    cout << "vector1ä¸­ç´¢å¼•ä¸º2çš„å…ƒç´ ä¸º: " << *iterator4 << endl;
+    vector2.insert(iterator4, 2, 88);  // vector1æ’å…¥ä¸¤ä¸ª88
     PrintVector(vector2);
-    cout << "µ±Ç°iterator4µÄÔªËØÎª: " << *iterator4 << "\tµü´úÆ÷Ê§Ğ§" << endl;  // µü´úÆ÷Ê§Ğ§
+    cout << "å½“å‰iterator4çš„å…ƒç´ ä¸º: " << *iterator4 << "\tè¿­ä»£å™¨å¤±æ•ˆ" << endl;  // è¿­ä»£å™¨å¤±æ•ˆ
     iterator4 = vector2.insert(vector2.begin(), 6);
-    cout << "vector2ÔªËØÈçÏÂ:" << endl;
+    cout << "vector2å…ƒç´ å¦‚ä¸‹:" << endl;
     PrintVector(vector2);
-    cout << "µ±Ç°iterator4µÄÔªËØÎª: "<< *iterator4 << endl;
+    cout << "å½“å‰iterator4çš„å…ƒç´ ä¸º: "<< *iterator4 << endl;
     return 0;
 }
